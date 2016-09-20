@@ -55,7 +55,7 @@ function triggerEvent(zip) {
     };
     Request(erzOptions)
         .then(function (results) {
-            if (results && results.result) {
+            if (results && results.result && results.result.length > 0) {
                 _.each(results.result, function(entry, index, list) {
                     queue.push(entry, function(err) {
                         console.log('Finished processing entry ' + (index + 1) + '/' + list.length);
