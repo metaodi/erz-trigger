@@ -1,0 +1,22 @@
+{
+  "name": "erz-trigger",
+  "version": "0.0.11",
+  "description": "Triggers an IFTTT maker channel",
+  "main": "trigger.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/metaodi/erz-trigger"
+  },
+  "keywords": [
+    "ifttt",
+    "erz",
+    "waste",
+    "collection",
+  ],
+  "author": "Stefan Oderbolz <odi@metaodi.ch> (http://metaodi.ch/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/metaodi/erz-trigger/issues"
+  },
+  "homepage": "https://github.com/metaodi/erz-trigger"
+}
