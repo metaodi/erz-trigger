@@ -13,7 +13,7 @@ On IFTTT there is a channel called "Maker", that can be used to either make web 
 Create a new recipe with a timer as the triggering event.
 This helps you to make a daily request to a given URL, basically this is a cron job.
 
-The URL in this case is http://erz-trigger.herokuapp.com?api_key=<key>&zip=8001
+The URL in this case is http://erz-trigger.herokuapp.com?api_token=<token>&zip=8001
 
 This is where this application is deployed to.
 
@@ -29,5 +29,5 @@ Finally you can use this service as the "THEN" part, and receive notifications f
 
 This application needs to environment variables to work, both must be configured on the heroku instance:
 
-* API_KEY: this adds a little safety, so that not everybody can trigger push notifcations on your phone.
+* API_TOKEN: this adds a little safety, so that not everybody can trigger push notifcations on your phone.
 * IFTTT_KEY: this is they API key for the maker channel of IFTTT, you can find yours here: https://ifttt.com/maker
