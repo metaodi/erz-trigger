@@ -13,7 +13,7 @@ On IFTTT there is a channel called "Maker", that can be used to either make web 
 Create a new recipe with a timer as the triggering event.
 This helps you to make a daily request to a given URL, basically this is a cron job.
 
-The URL in this case is http://erz-trigger.herokuapp.com?api_token=<token>&zip=8001
+The URL in this case is http://erz-trigger.herokuapp.com?api_token=[token]&zip=8001
 
 This is where this application is deployed to.
 
