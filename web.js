@@ -9,7 +9,8 @@ http.createServer(function(request, response) {
     var url = urlparse(request.url, true);
     if (url.query.api_token && url.query.api_token == API_TOKEN) {
         var zip = url.query.zip || null;
-        trigger.triggerEvent(zip);
+        var tour = url.query.tour || null;
+        trigger.triggerEvent(zip, tour);
         response.writeHead(200, {'Content-Type': 'text/html'});
         response.write('<html><head><title>Trigger successful | erz-trigger</title></head>');
         response.write('<body><h1>Successfully triggered event</h1>');

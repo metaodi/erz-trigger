@@ -6,7 +6,7 @@ var _ = require('underscore');
 
 exports.triggerEvent = triggerEvent;
 
-function triggerEvent(zip) {
+function triggerEvent(zip, tour) {
     var ifttt_key = process.env.IFTTT_KEY;
     if (!ifttt_key) {
         console.error("Your IFTTT maker key must be provided via the IFTTT_KEY env variable. Find your key here: https://ifttt.com/maker");
@@ -49,7 +49,8 @@ function triggerEvent(zip) {
             end: queryDate,
             sort: 'date',
             limit: 10,
-            zip: zip
+            zip: zip,
+            tour: tour
         },
         json: true,
     };
